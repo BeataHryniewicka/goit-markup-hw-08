@@ -1,0 +1,76 @@
+.btn {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.main-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--brand-color-white);
+  letter-spacing: 0.06em;
+  background-color: var(--brand-color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  min-width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px 41px;
+
+  &--submit {
+    margin-top: 30px;
+  }
+
+  &--newsletter {
+    text-align: left;
+  }
+  &--svg {
+    position: absolute;
+    fill: var(--brand-color-white);
+    bottom: 12px;
+    right: 20px;
+  }
+}
+.label-portfolio-btn {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 56px;
+  justify-content: center;
+
+  .portfolio-btn {
+    font-weight: 500;
+    background-color: var(--brand-color-light-grey);
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    padding: 6px 25px;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-btn:hover,
+  .portfolio-btn:focus {
+    background-color: var(--brand-color-blue);
+    color: var(--brand-color-white);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--brand-color-white);
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+  color: var(--brand-color-black);
+  font-size: 20px;
+}

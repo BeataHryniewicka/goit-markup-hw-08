@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  .clients__link {
+    color: var(--brand-color-icon);
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $transition-color;
+  }
+  .clients__icon {
+    fill: currentColor;
+  }
+  .clients__link:hover,
+  .clients__link:focus {
+    color: var(--brand-color-blue);
+    border-color: var(--brand-color-blue);
+    outline: transparent;
+  }
+}

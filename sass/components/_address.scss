@@ -1,0 +1,36 @@
+.address-data {
+  font-style: normal;
+  margin-top: 20px;
+
+  .address-data__list {
+    display: block;
+  }
+  .address-data__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .address-data__map {
+    color: var(--brand-color-white);
+    text-decoration: none;
+    margin-top: 20px;
+    line-height: 1.71;
+    transition: $transition-color;
+  }
+
+  .address-data__map:hover,
+  .address-data__map:focus {
+    color: var(--brand-color-blue);
+  }
+
+  .address-data__in-touch {
+    filter: opacity(60%);
+    text-decoration: none;
+    color: var(--brand-color-white);
+    margin-top: 9px;
+    line-height: 1.71;
+    transition: $transition-color;
+  }
+  .address-data__in-touch:hover,
+  .address-data__in-touch:focus {
+    color: var(--brand-color-blue);
+  }
+}

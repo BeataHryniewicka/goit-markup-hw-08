@@ -1,0 +1,29 @@
+.pusch-section {
+  padding: 200px 0;
+  background-image: linear-gradient(
+      var(--brand-color-bg-hero),
+      var(--brand-color-bg-hero)
+    ),
+    url(../images/bg-images/underlay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  &__tittle {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--brand-color-white);
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 696px;
+  }
+}
+
+// -----------button.scss------------

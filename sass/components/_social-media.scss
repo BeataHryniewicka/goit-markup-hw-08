@@ -1,0 +1,31 @@
+.social-media {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+
+  &--under {
+    background-color: var(--brand-color-bg-footer-icon);
+  }
+
+  &__link {
+    color: var(--brand-color-icon);
+    border-radius: 50%;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--brand-color-blue);
+    color: var(--brand-color-white);
+    outline: transparent;
+  }
+}

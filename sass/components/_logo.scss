@@ -1,0 +1,28 @@
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-size: 26px;
+}
+
+.logo-header {
+  @extend .logo;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 93px;
+}
+
+.studio-color-header {
+  color: var(--brand-color-black);
+}
+
+.web-color {
+  color: var(--brand-color-blue);
+}
+
+.studio-color-footer {
+  color: var(--brand-color-white);
+}

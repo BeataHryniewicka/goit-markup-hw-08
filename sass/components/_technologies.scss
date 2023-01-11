@@ -1,0 +1,32 @@
+.technologies {
+  &__list {
+    display: flex;
+    gap: 30px;
+
+    .technology {
+      background-color: var(--brand-color-light-grey);
+      height: 120px;
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      fill: var(--brand-color-dark-grey);
+
+      &__tittle {
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        font-style: bold;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      &__description {
+        text-align: left;
+        color: var(--brand-color-grey);
+        line-height: 1.71;
+      }
+    }
+  }
+}
