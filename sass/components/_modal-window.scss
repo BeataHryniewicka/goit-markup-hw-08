@@ -21,8 +21,18 @@
   box-shadow: 0px 1px 3px 0px;
   border-radius: 4px;
   padding: 40px;
-}
 
+ @media screen and (max-width: 1199px) {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;}
+  }
 /* .modal-close-btn {
   position: absolute;
   top: 8px;
