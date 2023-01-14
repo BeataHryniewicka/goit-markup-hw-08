@@ -4,11 +4,12 @@
     background-color: green;
     flex-direction: column;
     display: flex;
+   
   }
 
   @media (min-width: $tablet-size) {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     background-color: red;
   }
 
@@ -55,9 +56,9 @@
 
 .technology__item {
   @media (min-width: $tablet-size) {
-    //  background-color: red;
     flex-basis: calc((100% - 2rem) / 2);
   }
+
   @media (min-width: $detskop-size) {
     flex-basis: calc((100% - 2rem) / 4);
   }

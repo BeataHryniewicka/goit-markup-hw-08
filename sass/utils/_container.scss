@@ -1,19 +1,17 @@
 .container {
   margin: 0 auto;
   padding: 0 1rem;
-max-width: 480px;
- 
+  max-width: 480px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile-size) {
     min-width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $detskop-size) {
     width: 1200px;
-  
   }
 }
