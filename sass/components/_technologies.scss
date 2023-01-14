@@ -1,69 +1,64 @@
 .technologies {
   &__list {
-
     gap: 30px;
     background-color: green;
-   flex-direction: column;
-  
-  }}
+    flex-direction: column;
+    display: flex;
+  }
 
   @media (min-width: $tablet-size) {
-    .technologies__list {
-      background-color: red;
-      display: wrap;
-      flex-direction:row;
- 
-    }}
-     @media (min-width: $detskop-size) {
-    .technologies__list {
-      background-color: rgb(170, 58, 235);
-    }
+    display: flex;
+    flex-direction: row;
+    background-color: red;
   }
 
-
-  .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @media (min-width: $detskop-size) {
+    background-color: rgb(170, 58, 235);
   }
+}
 
-  .technology {
-    background-color: var(--brand-color-light-grey);
-    height: 8rem;
-    display: flex;
-    margin-bottom: 2rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    fill: var(--brand-color-dark-grey);
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    &__tittle {
-      font-weight: 700;
-      line-height: 1.14;
-      text-transform: uppercase;
-      font-style: bold;
-      margin-bottom: 0.66rem;
-      font-size: 14px;
+.technology {
+  background-color: var(--brand-color-light-grey);
+  height: 8rem;
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  fill: var(--brand-color-dark-grey);
+
+  &__tittle {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-style: bold;
+    margin-bottom: 0.66rem;
+    font-size: 14px;
+
+    @media (max-width: $tablet-size) {
       text-align: center;
     }
-
-    &__description {
-      text-align: left;
-      color: var(--brand-color-grey);
-      line-height: 1.71;
-    }
-    
   }
-  
+
+  &__description {
+    text-align: left;
+    color: var(--brand-color-grey);
+    line-height: 1.71;
+  }
+}
+
 .technology__item {
-
   @media (min-width: $tablet-size) {
-    .technology__item{
-      flex-basis: calc((100% - 2rem) / 2);
-    }
-      @media (min-width: $detskop-size) {
-    .technology__item {
-      flex-basis: calc((100% - 2rem) / 4);
-
-  }}}}
-
+    //  background-color: red;
+    flex-basis: calc((100% - 2rem) / 2);
+  }
+  @media (min-width: $detskop-size) {
+    flex-basis: calc((100% - 2rem) / 4);
+  }
+}
