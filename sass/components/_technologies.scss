@@ -1,9 +1,7 @@
 .technologies {
   &__list {
-    // gap: 30px;
     background-color: green;
     display: flex;
-    // flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -19,9 +17,10 @@
     background-color: rgb(170, 58, 235);
   }
 
-  .technology__item {
+  .technology__item{
     @media (min-width: $tablet-size) {
       flex-basis: calc((100% - 2rem) / 2);
+      gap: 30px;
     }
 
     @media (min-width: $detskop-size) {
