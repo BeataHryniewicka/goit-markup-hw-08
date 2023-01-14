@@ -3,30 +3,29 @@
     background-color: green;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
-  }
-
-  @media (min-width: $tablet-size) {
-    // flex-wrap: wrap;
-    background-color: red;
     gap: 30px;
   }
 
+  @media (min-width: $tablet-size) {
+    background-color: red;
+  }
   @media (min-width: $detskop-size) {
+    // flex-wrap: nowrap;
+    // flex-direction: row;
+    justify-content: center;
     background-color: rgb(170, 58, 235);
   }
 
-  .technology__item{
+  .technology__item {
     @media (min-width: $tablet-size) {
       flex-basis: calc((100% - 2rem) / 2);
-      gap: 30px;
     }
 
     @media (min-width: $detskop-size) {
+      width: 270px;
       flex-basis: calc((100% - 2rem) / 5);
-      gap: 30px;
-      
     }
   }
 }
