@@ -1,4 +1,5 @@
 .technologies {
+  // max-width:480px;
  
 
   &__list {
@@ -6,7 +7,8 @@
     background-color: green;
     flex-direction: column;
     display: flex;
-   
+    // max-width:480px;
+  
   }
 
   @media (min-width: $tablet-size) {

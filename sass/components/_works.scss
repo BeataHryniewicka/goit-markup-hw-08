@@ -4,6 +4,7 @@
   .work__list {
     display: flex;
     gap: 30px;
+     flex-direction: column;
 
     .image-overlay {
       position: relative;
