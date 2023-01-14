@@ -28,19 +28,22 @@
     color: var(--brand-color-white);
     letter-spacing: 0.06em;
     margin: 0 auto;
+    
+    // width: 22.81rem;
   }
-  @media screen and (min-width: $tablet-size) {
+   @media screen and (min-width: $mobile-size) {
     .pusch-section__tittle {
-      // font-size: 44px;
+    width: 22.81rem;}
+  }
+
+  @media screen and (min-width: $detskop-size) {
+    .pusch-section__tittle {
+      font-size: 44px;
+      line-height: 1.36;
+      margin-bottom: 1.875rem;
+      width: 696px;
     }
   }
-  @media screen and (min-width: $detskop-size) {
-    .pusch-section__tittle { 
-    font-size: 44px;
-    line-height: 1.36;
-    margin-bottom: 1.875rem;
-    width: 696px;
-  }
-}}
+}
 
 // -----------button.scss------------

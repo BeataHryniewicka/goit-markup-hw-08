@@ -3,19 +3,17 @@
   margin: 0 auto;
   max-width: $mobile-size;
 
-
   @media screen and (min-width: $mobile-size) {
-    min-width:  $mobile-size;
+    min-width: $mobile-size;
   }
 
   @media screen and (min-width: $tablet-size) {
-    width:  $tablet-size;
+    width: $tablet-size;
     max-width: $detskop-size;
-    
   }
 
   @media screen and (min-width: $detskop-size) {
     width: $detskop-size;
-     padding: 0 15px;
+    padding: 0 15px;
   }
 }
