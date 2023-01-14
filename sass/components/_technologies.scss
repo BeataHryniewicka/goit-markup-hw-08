@@ -2,6 +2,7 @@
   &__list {
     flex-direction: column;
     gap: 30px;
+    background-color: green;
   }
 
   @media (min-width: $tablet-size) {
@@ -12,24 +13,22 @@
       justify-content: space-between;
       background-color: red;
       flex-direction: row;
-      
     }
   }
-
 
   @media (min-width: $tablet-size) {
     .abc {
       flex-basis: calc((100% - 2rem) / 2);
     }
   }
-  
+
   @media (min-width: $detskop-size) {
     .technologies__list {
       background-color: rgb(170, 58, 235);
-    
-  }}
-   @media (min-width: $detskop-size) {
-    .abc {
+    }
+  }
+  @media (min-width: $detskop-size) {
+    .technology__item {
       flex-basis: calc((100% - 2rem) / 4);
       flex-wrap: nowrap;
     }
