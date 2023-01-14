@@ -4,26 +4,43 @@
       var(--brand-color-bg-hero),
       var(--brand-color-bg-hero)
     ),
-    url(../images/bg-images/underlay.jpg);
+    url(../images/bg-images/mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 100rem;
+  height: 37.5rem;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet-size) {
+    background-image: url(../images/bg-images/tablet.jpg);
+  }
+  @media screen and (min-width: $detskop-size) {
+    background-image: url(../images/bg-images/detskop.jpg);
+  }
 
   &__tittle {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 162%;
     text-transform: uppercase;
     text-align: center;
     color: var(--brand-color-white);
     letter-spacing: 0.06em;
     margin: 0 auto;
-    margin-bottom: 30px;
-    // width: 43.5rem;
   }
-}
+  @media screen and (min-width: $tablet-size) {
+    .pusch-section__tittle {
+      // font-size: 44px;
+    }
+  }
+  @media screen and (min-width: $detskop-size) {
+    .pusch-section__tittle { 
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 1.875rem;
+    width: 696px;
+  }
+}}
 
 // -----------button.scss------------
