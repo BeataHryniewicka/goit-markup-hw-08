@@ -1,33 +1,35 @@
 .technologies {
   &__list {
-    gap: 30px;
+    // gap: 30px;
     background-color: green;
     display: flex;
     // flex-direction: column;
-     justify-content: space-between;
-  align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $tablet-size) {
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     background-color: red;
+    gap: 30px;
   }
 
   @media (min-width: $detskop-size) {
     background-color: rgb(170, 58, 235);
   }
 
-.technology__item {
+  .technology__item {
+    @media (min-width: $tablet-size) {
+      flex-basis: calc((100% - 2rem) / 2);
+    }
 
-
-  @media (min-width: $tablet-size) {
-    flex-basis: calc((100% - 2rem) / 2);
+    @media (min-width: $detskop-size) {
+      flex-basis: calc((100% - 2rem) / 5);
+      gap: 30px;
+      
+    }
   }
-
-  @media (min-width: $detskop-size) {
-    flex-basis: calc((100% - 2rem) / 4);
-  }
-}
 }
 
 .technology {
