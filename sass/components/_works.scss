@@ -1,8 +1,12 @@
 .work {
+  
+  @media (max-width: $tablet-size) {
+    display: none;
+  }
+   @media (min-width: $detskop-size) {
   padding-top: 0;
-  // @media (max-width: $tablet-size) {
-  //   display: none;
-  // }
+   }
+
 
   .work__list {
     display: flex;

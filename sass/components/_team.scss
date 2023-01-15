@@ -6,8 +6,9 @@
     display: flex;
     gap: 30px;
     flex-direction: column;
-    @media (min-width: $detskop-size){
-    flex-direction: row;
+    
+    @media (min-width: $detskop-size) {
+      flex-direction: row;
     }
 
     .team-item {
