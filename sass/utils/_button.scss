@@ -13,30 +13,47 @@
   background-color: var(--brand-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
-  min-width: 200px;
+  width: 12.5em;
   height: 50px;
   margin: 30px auto;
   padding: 10px 41px;
 
-  @media (min-width: $detskop-size) {
-    margin: 0px;
-  }
+  // @media (min-width: $detskop-size) {
+  //   margin: 0px;
+  // }
 
   &--submit {
     margin-top: 30px;
   }
 
-  &--newsletter {
-    text-align: left;
-  }
-  &--svg {
+
+}
+.main-button--newsletter {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--brand-color-white);
+  letter-spacing: 0.06em;
+  background-color: var(--brand-color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 12.5em;
+  height: 50px;
+  padding: 10px 41px;
+  text-align: left;
+  
+    &--svg {
     position: absolute;
     fill: var(--brand-color-white);
     bottom: 12px;
     right: 20px;
   }
-}
 
+@media (min-width: $detskop-size) {
+  .main-button--newsleter {
+    margin: 0px;
+  }}
+}
 .label-portfolio-btn {
   display: flex;
   gap: 8px;

@@ -9,6 +9,11 @@
   flex-direction: column;
   align-content: center;
 
+  @media (min-width: $detskop-size) {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
   .container__footer-tablet {
     align-items: baseline;
     text-align: center;
@@ -16,11 +21,13 @@
     @media (min-width: $tablet-size) {
       display: flex;
       gap: 9em;
-        }
-
+    }
     @media (min-width: $detskop-size) {
       text-align: left;
+      display: flex;
+      flex-wrap: nowrap;
       flex-direction: row;
+      gap: 0;
     }
   }
 }
@@ -29,6 +36,7 @@
   margin-bottom: 3.75em;
   @media (min-width: $detskop-size) {
     margin-right: 4.35em;
+    margin-bottom: 0;
   }
 }
 
