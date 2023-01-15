@@ -1,17 +1,38 @@
 .footer {
   background-color: var(--brand-color-background-black);
- padding: 60px 0;
+  padding: 60px 0;
 }
 
 .container__footer {
   display: flex;
-  align-items: baseline;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+
+  .container__footer-tablet {
+    align-items: baseline;
+    text-align: center;
+    
+    @media (min-width: $tablet-size) {
+      display: flex;
+      gap: 9em;
+      flex-basis: calc(100% / 2);
+    }
+  }
+
+  @media (min-width: $detskop-size) {
+    text-align: start;
+  }
 }
 
 .footer__address {
-  margin-right: 70px;
+  margin-bottom: 3.75em;
+
+  @media (min-width: $detskop-size) {
+    margin-right: 4.35em;
+  }
 }
+
 //  -----logo.scss--------
 //  ----addres.scss--------
 // --------newsletter---------

@@ -5,14 +5,31 @@
   line-height: 1.19;
   letter-spacing: 0.02em;
   text-align: left;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.19;
+
+  @media (min-width: $detskop-size) {
+    font-size: 26px;
+    line-height: 1.38;
+    letter-spacing: 0.03em;
+    max-width: 170px;
+  }
 }
 
 .logo-header {
-  @extend .logo;
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 93px;
+  @media (min-width: $detskop-size) {
+    font-family: Raleway;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.19;
+    margin-top: 1.5rem;
+    margin-bottom: 1.56rem;
+    margin-right: 5.81rem;
+  }
 }
 
 .studio-color-header {

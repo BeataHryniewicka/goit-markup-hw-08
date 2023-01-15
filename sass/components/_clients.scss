@@ -5,6 +5,13 @@
   align-items: center;
   gap: 30px;
 
+  .clients__list { 
+  @media (min-width: $detskop-size) {
+    flex-basis: calc((100% - 2rem) / 6);
+    max-width: 170px;
+  
+  }}
+
   .clients__link {
     color: var(--brand-color-icon);
     border: 1px solid currentColor;
