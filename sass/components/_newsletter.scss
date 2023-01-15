@@ -1,6 +1,7 @@
 .newsletter {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $detskop-size) {
     margin-left: auto;
   }
@@ -11,6 +12,9 @@
     text-transform: uppercase;
     color: var(--brand-color-white);
     text-align: center;
+
+     @media (min-width: $detskop-size) {
+    text-align: left;}
   }
 
   .newsletter__part {
@@ -20,32 +24,36 @@
     flex-direction: column;
     align-items: center;
 
-    .newsletter__input {
-      padding-left: 16px;
-      // width: 28.12em;
+   @media (min-width: $detskop-size) {
+ display: flex;
+ flex-direction: row;
+   }}
+  .newsletter__input {
+    padding-left: 16px;
+    height: 50px;
+    color: var(--brand-color-newsletter-input);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    outline: transparent;
+    min-width: 290px;
 
-      height: 50px;
-      color: var(--brand-color-newsletter-input);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-      background-color: transparent;
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
-      outline: transparent;
-      min-width: 290px;
+    @media (min-width: $mobile-size) {
+    width: 450px;
+    }
+    // @media (min-width: $tablet-size) {
+    //   max-width: 450px;
+    // }
 
-      @media (min-width: $mobile-size) {
-        min-width: 450px;
-      }
+    @media (min-width: $detskop-size) {
+      margin-right: 12px;
+      max-width: 358px;
 
-      @media (min-width: $tablet-size) {
-      
-      }
-      @media (min-width: $detskop-size) {
-        margin-right: 12px;
-      }
+      background-color: red;
     }
   }
 }
