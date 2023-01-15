@@ -13,8 +13,9 @@
     color: var(--brand-color-white);
     text-align: center;
 
-     @media (min-width: $detskop-size) {
-    text-align: left;}
+    @media (min-width: $detskop-size) {
+      text-align: left;
+    }
   }
 
   .newsletter__part {
@@ -24,10 +25,11 @@
     flex-direction: column;
     align-items: center;
 
-   @media (min-width: $detskop-size) {
- display: flex;
- flex-direction: row;
-   }}
+    @media (min-width: $detskop-size) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
   .newsletter__input {
     padding-left: 16px;
     height: 50px;
@@ -41,16 +43,15 @@
     letter-spacing: 0.03em;
     outline: transparent;
     min-width: 290px;
+     margin-bottom: 20px;
 
     @media (min-width: $mobile-size) {
-    width: 450px;
+      width: 450px;
     }
-    // @media (min-width: $tablet-size) {
-    //   max-width: 450px;
-    // }
-
+  
     @media (min-width: $detskop-size) {
       margin-right: 12px;
+      margin-bottom: 0;
       max-width: 358px;
     }
   }

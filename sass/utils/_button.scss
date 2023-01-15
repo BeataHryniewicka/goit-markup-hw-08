@@ -18,15 +18,9 @@
   margin: 30px auto;
   padding: 10px 41px;
 
-  // @media (min-width: $detskop-size) {
-  //   margin: 0px;
-  // }
-
   &--submit {
     margin-top: 30px;
   }
-
-
 }
 .main-button--newsletter {
   font-weight: 700;
@@ -41,19 +35,31 @@
   height: 50px;
   padding: 10px 41px;
   text-align: left;
-  
-    &--svg {
+
+  &--svg {
     position: absolute;
     fill: var(--brand-color-white);
-    bottom: 12px;
-    right: 20px;
+    bottom: 0.75em;
+    right: 5.5em;
   }
+}
+
+@media (min-width: $mobile-size) {
+  .main-button--newsletter--svg {
+    right: 11em;
+  }
+}
+@media (min-width: $tablet-size) {
+  .main-button--newsletter--svg {
+    right: 15em;
+  }}
 
 @media (min-width: $detskop-size) {
-  .main-button--newsleter {
-    margin: 0px;
-  }}
+  .main-button--newsletter--svg {
+    right: 1.75em;
+  }
 }
+
 .label-portfolio-btn {
   display: flex;
   gap: 8px;
