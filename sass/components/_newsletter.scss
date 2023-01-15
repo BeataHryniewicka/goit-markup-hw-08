@@ -13,11 +13,10 @@
     margin-top: 20px;
     display: flex;
     position: relative;
-    flex-direction: column;
 
     .newsletter__input {
       padding-left: 16px;
-      width: 22.3em;
+      width: 358px;
       height: 50px;
       color: var(--brand-color-newsletter-input);
       border: 1px solid rgba(255, 255, 255, 0.3);

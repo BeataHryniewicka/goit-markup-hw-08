@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--brand-color-background-black);
-  padding: 60px 0;
+  padding: 3.75em 0;
 }
 
 .container__footer {
@@ -18,17 +18,15 @@
       gap: 9em;
       flex-basis: calc(100% / 2);
     }
-  }
 
-  @media (min-width: $detskop-size) {
-    text-align: start;
-    background-color: red;
+    @media (min-width: $detskop-size) {
+      text-align: left;
+    }
   }
 }
 
 .footer__address {
   margin-bottom: 3.75em;
-
   @media (min-width: $detskop-size) {
     margin-right: 4.35em;
   }
