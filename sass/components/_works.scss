@@ -1,8 +1,8 @@
 .work {
   padding-top: 0;
-  @media (max-width: $tablet-size) {
-    display: none;
-  }
+  // @media (max-width: $tablet-size) {
+  //   display: none;
+  // }
 
   .work__list {
     display: flex;
