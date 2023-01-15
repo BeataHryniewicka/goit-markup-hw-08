@@ -4,7 +4,7 @@
       var(--brand-color-bg-hero),
       var(--brand-color-bg-hero)
     ),
-    url(../images/bg-images/mobile.jpg);
+    url(/images/bg-images/mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,10 +13,10 @@
   margin: 0 auto;
 
   @media screen and (min-width: $tablet-size) {
-    background-image: url(../images/bg-images/tablet.jpg);
+    background-image: url(/images/bg-images/tablet.jpg);
   }
   @media screen and (min-width: $detskop-size) {
-    background-image: url(../images/bg-images/detskop.jpg);
+    background-image: url(/images/bg-images/detskop.jpg);
   }
 
   &__tittle {
@@ -28,12 +28,13 @@
     color: var(--brand-color-white);
     letter-spacing: 0.06em;
     margin: 0 auto;
-    
+
     // width: 22.81rem;
   }
-   @media screen and (min-width: $mobile-size) {
+  @media screen and (min-width: $mobile-size) {
     .pusch-section__tittle {
-    width: 22.81rem;}
+      width: 22.81rem;
+    }
   }
 
   @media screen and (min-width: $detskop-size) {
