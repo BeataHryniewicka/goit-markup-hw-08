@@ -22,7 +22,7 @@
   border-radius: 4px;
   padding: 40px;
 
- @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     width: 95%;
     max-width: 450px;
     height: 95%;
@@ -31,8 +31,9 @@
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
-    height: 581px;}
+    height: 581px;
   }
+}
 /* .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -163,5 +164,21 @@
       background-color: var(--brand-color-blue);
       border-color: var(--brand-color-blue);
     }
+  }
+}
+@media (max-width: $tablet-size) {
+  .acceptation__text {
+    font-size: 12px;
+    line-height: 1.16em;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+  }
+}
+@media (min-width: $detskop-size) {
+  .acceptation__text {
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
   }
 }
