@@ -1,7 +1,9 @@
+.mobile-nav {
+  justify-content: space-between;
+}
 .navigation {
   display: flex;
   align-items: center;
-
 
   .navigation__nav-item:not(:last-child) {
     margin-right: 50px;
