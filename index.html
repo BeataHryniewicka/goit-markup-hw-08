@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container page-header__box">
         <a class="logo-header" href="index.html">
           <span class="web-color">Web</span
@@ -65,7 +65,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!--Hero-->
@@ -187,10 +187,18 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="images/man1.jpg"
+                srcset="
+                  ../images/man_1/mb@1x.jpg 450w,
+                  ../images/man_1/mb@2x.jpg 900w,
+                  ../images/man_1/tb@1x.jpg  354w,
+                 .. /images/man_1/tb@2x.jpg 708w,
+                 .. /images/man_1/dt@1x.jpg 270w,
+                  ../images/man_1/dt@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                src="images/man_1/dt@1.jpg"
                 alt="postać John Doe"
-                width="270"
-                height="260"
               />
               <div class="team-presentaction">
                 <h3 class="team-presentaction__name">John Doe</h3>
@@ -226,12 +234,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="images/man2.jpg"
-                alt="postać John Doe"
-                width="270"
-                height="260"
-              />
+              <img src="images/man_2/dt@1.jpg" alt="postać John Doe" />
               <div class="team-presentaction">
                 <h3 class="team-presentaction__name">John Doe</h3>
                 <p class="team-presentaction__function">Frontend Developer</p>
@@ -266,12 +269,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="images/man3.jpg"
-                alt="postać John Doe"
-                width="270"
-                height="260"
-              />
+              <img src="images/man_3/dt@1.jpg" alt="postać John Doe" />
               <div class="team-presentaction">
                 <h3 class="team-presentaction__name">John Doe</h3>
                 <p class="team-presentaction__function">Marketing</p>
@@ -306,12 +304,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="images/man4.jpg"
-                alt="postać John Doe"
-                width="270"
-                height="260"
-              />
+              <img src="images/man_4/dt@1.jpg" alt="postać John Doe" />
               <div class="team-presentaction">
                 <h3 class="team-presentaction__name">John Doe</h3>
                 <p class="team-presentaction__function">UI Designer</p>
