@@ -4,46 +4,57 @@
       var(--brand-color-bg-hero),
       var(--brand-color-bg-hero)
     ),
-    url(/images/bg-images/mobile.jpg);
+    url(../images/bg-images/mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   max-width: 100rem;
   height: 37.5rem;
   margin: 0 auto;
+  
 
-  @media screen and (min-width: $tablet-size) {
-    background-image: url(/images/bg-images/tablet.jpg);
-  }
-  @media screen and (min-width: $detskop-size) {
-    background-image: url(/images/bg-images/detskop.jpg);
+  @media (min-width: $tablet-size) {
+    background-image: url(../images/bg-images/tablet.jpg);
   }
 
-  &__tittle {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 162%;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--brand-color-white);
-    letter-spacing: 0.06em;
-    margin: 0 auto;
+  @media (min-width: $detskop-size) {
+    background-image: url(../images/bg-images/detskop.jpg);
+    }}
 
-    // width: 22.81rem;
-  }
-  @media screen and (min-width: $mobile-size) {
-    .pusch-section__tittle {
-      width: 22.81rem;
-    }
-  }
+   @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .pusch-section {
+      background-image: linear-gradient(
+          var(--brand-color-bg-hero),
+          var(--brand-color-bg-hero)
+        ),
+        url(/images/bg-images/mobile.jpg);
+    }}
 
-  @media screen and (min-width: $detskop-size) {
-    .pusch-section__tittle {
-      font-size: 44px;
-      line-height: 1.36;
-      margin-bottom: 1.875rem;
-      width: 696px;
-    }
+
+.pusch-section__tittle {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 162%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--brand-color-white);
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+}
+@media screen and (min-width: $mobile-size) {
+  .pusch-section__tittle {
+    width: 22.81rem;
+  }
+}
+
+@media screen and (min-width: $detskop-size) {
+  .pusch-section__tittle {
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 1.875rem;
+    width: 696px;
   }
 }
 
