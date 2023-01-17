@@ -5,8 +5,9 @@
   .team-list {
     display: flex;
     gap: 30px;
-    flex-direction: column;
-    
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     @media (min-width: $detskop-size) {
       flex-direction: row;
     }
@@ -16,6 +17,13 @@
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
       background-color: var(--brand-color-white);
+
+      // @media (min-width: $tablet-size) {
+      //   flex-basis: calc((100% - 2rem) / 2);
+      // }
+      @media (min-width: detskop-size) {
+        flex-wrap: nowrap;
+      }
 
       .team-presentaction {
         padding-top: 24px;
