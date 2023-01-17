@@ -21,14 +21,18 @@
   // margin-top: 1.62rem;
   // margin-bottom: 1.56rem;
   // margin-right: 5.81rem;
+margin-right: 83px;
 
   @media (min-width: $detskop-size) {
+    .logo-header { 
     font-size: 1.62em;
     line-height: 1.38;
     letter-spacing: 0.03em;
     max-width: 170px;
-  }
-}
+    
+
+  }}}
+
 
 .studio-color-header {
   color: var(--brand-color-black);

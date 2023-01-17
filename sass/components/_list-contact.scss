@@ -1,14 +1,22 @@
 .list-contact {
   display: flex;
-  align-items: center;
   margin-left: auto;
   flex-direction: column;
+ 
 
-
+@media (min-width:$detskop-size){
+   flex-direction: row;
+}
+&__item-contact:first-child {
+  margin-bottom: 10px;
+}
   @media (min-width: $detskop-size){
   &__item-contact:not(:last-child) {
     margin-right: 50px;
-  }}
+    flex-direction: row;
+   
+  }
+}
 }
 
 .contact {

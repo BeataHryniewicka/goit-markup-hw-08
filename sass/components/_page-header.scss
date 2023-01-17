@@ -5,9 +5,14 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (min-width: $tablet-size) {
+    justify-content: flex-start;
+  }
+
   &__box {
     display: flex;
   }
+
 }
 
 @media (max-width: 767px) {
