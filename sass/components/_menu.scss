@@ -47,7 +47,8 @@ mobile-menu.is-open {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+//   background-color: rgba(0, 0, 0, 0.1);
+ background-color:red;
 }
 
 // // .menu-container {
@@ -63,11 +64,11 @@ mobile-menu.is-open {
 // //   transition: transform 250ms ease-in-out;
 // // }
 
-// .is-open {
-//   transition: $transition-color;
-//   transform: translateX(0);
-//   display: block;
-// }
+.is-open {
+  transition: $transition-color;
+  transform: translateX(0);
+  display: block;
+}
 
 // // .menu-container .menu-toggle {
 // //   position: absolute;
