@@ -12,11 +12,14 @@
   &__box {
     display: flex;
   }
-}
 
-@media (max-width: 767px) {
   .page-header__menu {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
