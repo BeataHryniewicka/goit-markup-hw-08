@@ -79,7 +79,7 @@
 
   &__phone {
     font-size: 34px;
-    color: #2196f3;
+    color: var(--brand-color-cards-overlay);
     text-decoration: none;
     margin-bottom: 32px;
   }
@@ -108,7 +108,7 @@
   }
 
   &__social__link:last-child {
-    // border-right: none
+    // border-right: none;
     margin-right: none;
     padding-right: none;
   }
