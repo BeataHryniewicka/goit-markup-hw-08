@@ -11,17 +11,8 @@
 
   &__box {
     display: flex;
-  }
+  }  }
 
-  .page-header__menu {
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: 767px) {
-      display: none;
-    }
-  }
-}
 
 // -------logo.scss-----------
 // ------navigation.scss------

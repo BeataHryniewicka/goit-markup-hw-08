@@ -2,7 +2,10 @@
   display: flex;
   margin-left: auto;
   flex-direction: column;
- 
+  
+  @media (max-width: 767px) {
+      display: none;
+    }
 
 @media (min-width:$detskop-size){
    flex-direction: row;
