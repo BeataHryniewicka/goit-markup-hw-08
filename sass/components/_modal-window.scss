@@ -136,6 +136,7 @@
   .acceptation {
     margin: 0 auto;
     position: relative;
+    display: inline-flex;
 
     /* .main-button--submit {
   margin-top: 30px;
@@ -170,8 +171,6 @@
   .acceptation__text {
     font-size: 12px;
     line-height: 1.16em;
-    display: inline-flex;
-    align-items: center;
     letter-spacing: 0.03em;
   }
 }
@@ -180,5 +179,6 @@
     font-size: 14px;
     line-height: 1.71em;
     letter-spacing: 0.03em;
+    vertical-align: text-top;
   }
 }
