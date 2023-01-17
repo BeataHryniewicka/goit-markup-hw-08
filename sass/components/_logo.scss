@@ -7,6 +7,20 @@
   text-align: left;
   font-size: 1.5em;
   line-height: 1.19;
+}
+
+.logo-header {
+  font-family: Raleway;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-size: 1.5em;
+  line-height: 1.19;
+  // margin-top: 1.62rem;
+  // margin-bottom: 1.56rem;
+  // margin-right: 5.81rem;
 
   @media (min-width: $detskop-size) {
     font-size: 1.62em;
@@ -15,21 +29,6 @@
     max-width: 170px;
   }
 }
-
-.logo-header {
-    font-family: Raleway;
-    font-weight: 700;
-    text-decoration: none;
-    line-height: 1.19;
-    letter-spacing: 0.02em;
-    text-align: left;
-    font-size: 1.5em;
-    line-height: 1.19;
-    margin-top: 1.62rem;
-    margin-bottom: 1.56rem;
-    margin-right: 5.81rem;
-  }
-
 
 .studio-color-header {
   color: var(--brand-color-black);

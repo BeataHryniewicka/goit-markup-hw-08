@@ -7,14 +7,15 @@
 
   &__box {
     display: flex;
-    // flex-wrap: nowrap;
-    align-items: center;
   }
 }
+
 @media (max-width: 767px) {
   .page-header__menu {
     display: none;
-  }}
+  }
+}
+
 // -------logo.scss-----------
 // ------navigation.scss------
 // ------list-contact.scss-----
