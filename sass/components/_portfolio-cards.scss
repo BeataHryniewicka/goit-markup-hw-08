@@ -4,14 +4,14 @@
   row-gap: 30px;
   column-gap: 30px;
 
-  .cards__list {
-    flex-basis: calc((100% - 2rem) / 2);
-   }
+  // .cards__list {
+  //   flex-basis: calc((100% - 2rem) / 2);
+  // }
 
- @media (min-width: $detskop-size){ 
-    flex-basis: calc((100% - 2rem) / 3);
-  }
-  
+  // @media (min-width: $detskop-size) {
+  //   flex-basis: calc((100% - 2rem) / 3);
+  // }
+
   .cadrs__link {
     transition: $transition-shadow;
   }
