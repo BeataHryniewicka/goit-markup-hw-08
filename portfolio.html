@@ -50,45 +50,44 @@
       </div>
 
       <!-- ----navigacja ------ -->
-   
-        <nav>
-          <ul class="navigation">
-            <li class="navigation__nav-item">
-              <a
-                class="navigation__nav-link--active navigation__nav-link"
-                href="index.html"
-                >Agencja</a
-              >
-            </li>
-            <li class="navigation__nav-item">
-              <a class="navigation__nav-link" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="navigation__nav-item">
-              <a class="navigation__nav-link" href="#">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- ----------------kontakty----------- -->
 
-        <ul class="list-contact">
-          <li class="list-contact__item-contact">
-            <a class="contact" href="mailto:info@devstudio.com"
-              ><svg class="contact__icon-contact" width="16" height="12">
-                <use href="images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
+      <nav>
+        <ul class="navigation">
+          <li class="navigation__nav-item">
+            <a
+              class="navigation__nav-link--active navigation__nav-link"
+              href="index.html"
+              >Agencja</a
             >
           </li>
-          <li class="list-contact__item-contact">
-            <a class="contact" href="tel:+48111111111"
-              ><svg class="contact__icon-contact" width="10" height="16">
-                <use href="images/icons.svg#icon-smartphone"></use></svg
-              >+48 111 111 111</a
+          <li class="navigation__nav-item">
+            <a class="navigation__nav-link" href="./portfolio.html"
+              >Portfolio</a
             >
+          </li>
+          <li class="navigation__nav-item">
+            <a class="navigation__nav-link" href="#">Kontakt</a>
           </li>
         </ul>
-      </div>
+      </nav>
+      <!-- ----------------kontakty----------- -->
+
+      <ul class="list-contact">
+        <li class="list-contact__item-contact">
+          <a class="contact" href="mailto:info@devstudio.com"
+            ><svg class="contact__icon-contact" width="16" height="12">
+              <use href="images/icons.svg#icon-envelope"></use></svg
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="list-contact__item-contact">
+          <a class="contact" href="tel:+48111111111"
+            ><svg class="contact__icon-contact" width="10" height="16">
+              <use href="images/icons.svg#icon-smartphone"></use></svg
+            >+48 111 111 111</a
+          >
+        </li>
+      </ul>
     </header>
 
     <main>
@@ -339,7 +338,6 @@
         </div>
       </section>
     </main>
-  <!-- -------footer section-------- -->
     <footer class="footer">
       <div class="container container__footer">
         <div class="container__footer-tablet">
@@ -428,5 +426,59 @@
         </form>
       </div>
     </footer>
+
+    <!-- --menu  section-- (okno modalne tylko mobile)--- -->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="index.html">Agencja</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Kontakt</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__address">
+        <a class="mobile-menu__phone" href="tel:+48111111111"
+          >+48 111 111 111</a
+        >
+        <a class="mobile-menu__mail" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+
+        <ul class="mobile-menu__social">
+          <li><a class="mobile-menu__social__link" href="#">Instagram</a></li>
+          <li><a class="mobile-menu__social__link" href="#">Twitter</a></li>
+          <li><a class="mobile-menu__social__link" href="#">Facebook</a></li>
+          <li><a class="mobile-menu__social__link" href="#">Linkedln</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
