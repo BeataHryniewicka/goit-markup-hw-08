@@ -11,18 +11,8 @@
   max-width: 100rem;
   height: 25rem;
   margin: 0 auto;
-  
 
-  @media (min-width: $tablet-size) {
-    background-image: url(../images/bg-images/tablet.jpg);
-  }
-
-  @media (min-width: $detskop-size) {
-    background-image: url(../images/bg-images/detskop.jpg);
-    height: 37.5rem;
-    }}
-
-   @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .pusch-section {
@@ -30,9 +20,42 @@
           var(--brand-color-bg-hero),
           var(--brand-color-bg-hero)
         ),
-        url(/images/bg-images/mobile.jpg);
-    }}
+        url(/images/bg-images/mobile@2.jpg);
+    }
+  }
 
+  @media (min-width: $tablet-size) {
+    background-image: url(../images/bg-images/tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .pusch-section {
+      background-image: linear-gradient(
+          var(--brand-color-bg-hero),
+          var(--brand-color-bg-hero)
+        ),
+        url(/images/bg-images/tablet@2.jpg);
+    }
+
+    @media (min-width: $detskop-size) {
+      background-image: url(../images/bg-images/detskop.jpg);
+      height: 37.5rem;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .pusch-section {
+      background-image: linear-gradient(
+          var(--brand-color-bg-hero),
+          var(--brand-color-bg-hero)
+        ),
+        url(/images/bg-images/detskop@2.jpg);
+    }
+  }
+}
 
 .pusch-section__tittle {
   font-weight: 900;
