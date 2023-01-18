@@ -17,7 +17,7 @@
       border-radius: 0px 0px 4px 4px;
       background-color: var(--brand-color-white);
 
-      @media (min-width: detskop-size) {
+      @media (min-width: $detskop-size) {
         flex-wrap: nowrap;
       }
 

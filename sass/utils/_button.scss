@@ -62,9 +62,17 @@
 
 .label-portfolio-btn {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 56px;
-  justify-content: center;
+
+  @media (min-width: $tablet-size){
+
+  }
+    @media (min-width: $detskop-size){
+      justify-content: center;
+  }
+
 
   .portfolio-btn {
     font-weight: 500;
