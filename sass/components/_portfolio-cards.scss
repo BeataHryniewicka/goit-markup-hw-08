@@ -8,8 +8,10 @@
     flex-basis: calc((100% - 2rem) / 2);
    }
 
+ @media (min-width: $detskop-size){ 
+    flex-basis: calc((100% - 2rem) / 3);
+  }
   
-
   .cadrs__link {
     transition: $transition-shadow;
   }
@@ -75,7 +77,3 @@
     }
   }
 }
- @media (min-width: $detskop-size){ 
- .cards__list {
-    flex-basis: calc((100% - 2rem) / 3);
-  }}
