@@ -4,6 +4,9 @@
   row-gap: 30px;
   column-gap: 30px;
 
+  .cards__list {
+    flex-basis: calc((100% - 2rem) / 2);
+  }
   .cadrs__link {
     transition: $transition-shadow;
   }
