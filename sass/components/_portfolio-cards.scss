@@ -3,8 +3,7 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  .cards__list { 
-  
+  .cards__list {
     @media (min-width: $tablet-size) {
       flex-basis: calc((100% - 2rem) / 2);
     }
