@@ -60,20 +60,14 @@
   color: var(--brand-color-white);
   letter-spacing: 0.06em;
   margin: 0 auto;
+  max-width: 365px;
 
-@media screen and (min-width: $mobile-size) {
-  .pusch-section__tittle {
-    width: 22.81rem;
-  }
-}
-
-@media screen and (min-width: $detskop-size) {
-  .pusch-section__tittle {
+  @media (min-width: $detskop-size) {
     font-size: 44px;
     line-height: 1.36;
     margin-bottom: 1.875rem;
-    width: 696px;
+    max-width: 696px;
   }
-}}
+}
 
 // -----------button.scss------------
