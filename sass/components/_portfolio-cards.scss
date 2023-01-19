@@ -1,10 +1,10 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 30px;
-  column-gap: 30px;
+  gap: 30px;
 
-  .cards__list {
+  .cards__list { 
+  
     @media (min-width: $tablet-size) {
       flex-basis: calc((100% - 2rem) / 2);
     }
