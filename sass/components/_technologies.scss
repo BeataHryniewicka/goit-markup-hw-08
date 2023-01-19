@@ -35,8 +35,9 @@
     font-style: bold;
     margin-bottom: 0.66rem;
     font-size: 14px;
+    text-align: center;
 
-    @media (max-width: $detskop-size) {
+    @media (min-width: $tablet-size) {
       text-align: left;
     }
   }
