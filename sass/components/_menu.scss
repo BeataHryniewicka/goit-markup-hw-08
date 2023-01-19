@@ -17,13 +17,16 @@
   top: 16px;
   right: 16px;
 
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    fill: var(--brand-color-blue);
-  }
-
   @media (min-width: $tablet-size) {
     display: none;
+  }
+}
+.icon-menu-svg {
+  fill: var(--brand-color-dark-grey);
+
+  &:hover,
+  &:focus {
+    fill: var(--brand-color-blue);
   }
 }
 
