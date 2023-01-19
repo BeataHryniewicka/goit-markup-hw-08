@@ -10,6 +10,7 @@
     }
     @media (min-width: $detskop-size) {
       flex-basis: calc((100% - 2rem) / 3);
+      max-width: 370px;
     }
 
     .cadrs__link {
@@ -41,18 +42,18 @@
       outline: transparent;
       transform: translateY(100%);
       transition: $transition;
+    }
 
-      .cards__link:hover .cards__overlay,
-      .cards__link:focus .cards__overlay {
-        transform: translateY(0%);
-      }
+    .cards__link:hover .cards__overlay,
+    .cards__link:focus .cards__overlay {
+      transform: translateY(0%);
+    }
 
-      .cards__overlay-text {
-        font-size: 18px;
-        line-height: 1.75;
-        color: var(--brand-color-white);
-        padding: 49px 45px 49px 24px;
-      }
+    .cards__overlay-text {
+      font-size: 18px;
+      line-height: 1.75;
+      color: var(--brand-color-white);
+      padding: 49px 45px 49px 24px;
     }
   }
 
@@ -61,13 +62,16 @@
     border: 1px solid var(--brand-color-cards-services);
 
     .services__kind {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       line-height: 2;
       text-align: left;
       letter-spacing: 0.06em;
       margin-bottom: 4px;
       color: var(--brand-color-dark-grey);
+      @media (min-width: $detskop-size) {
+        font-size: 18px;
+      }
     }
 
     .services__group {
