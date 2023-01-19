@@ -9,12 +9,6 @@
     flex-wrap: nowrap;
   }
 
-  .clients__list {
-    // @media (min-width: $detskop-size) {
-    //   flex-basis: calc((100% - 2rem) / 6);
-    // }
-  }
-
   .clients__link {
     color: var(--brand-color-icon);
     border: 1px solid currentColor;
