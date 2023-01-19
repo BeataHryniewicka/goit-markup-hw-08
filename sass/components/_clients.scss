@@ -5,24 +5,35 @@
   align-items: center;
   gap: 30px;
 
-  .clients__list { 
   @media (min-width: $detskop-size) {
-    flex-basis: calc((100% - 2rem) / 6);
-    max-width: 170px;
-  
-  }}
+    flex-wrap: nowrap;
+  }
+
+  .clients__list {
+    // @media (min-width: $detskop-size) {
+    //   flex-basis: calc((100% - 2rem) / 6);
+    // }
+  }
 
   .clients__link {
     color: var(--brand-color-icon);
     border: 1px solid currentColor;
     border-radius: 4px;
-    width: 170px;
+    min-width: 210px;
     height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: $transition-color;
+
+    @media (min-width: $tablet-size) {
+      min-width: 226px;
+    }
+    @media (min-width: $detskop-size) {
+      max-width: 170px;
+    }
   }
+
   .clients__icon {
     fill: currentColor;
   }
